@@ -1,3 +1,4 @@
+from models.House import House
 import sys
 sys.path.insert(0,'D:\\Python\\labs\\Python-Lab-11\\__main__\\python\\ua\\lviv\\iot\\airline\\models')
 
@@ -34,5 +35,5 @@ class HouseManagerImpl:
             print("adress: %s, city: %s\n" % (v.get_adress, v.get_city))
             
     @staticmethod
-    def findPropositionByCity(city):
-        houses.stream().filter(x -> city.equals(x.getCity())).collect(Collectors.toList());
+    def findHouseByCity(cityToFind):
+        return list(filter(lambda house: house.city == cityToFind, HouseManagerImpl.house_list))

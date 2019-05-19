@@ -20,7 +20,7 @@ def main():
     print("\n"+"."*20)
     h.sortByPrice(False)
     h.printListOfHouses()
-    
-    h.findPropositionByCity('Lviv');
+    print("\n"+"."*20)
+    print("House in Lviv: ", h.findHouseByCity('Lviv'))
 
 if __name__ == "__main__": main()
