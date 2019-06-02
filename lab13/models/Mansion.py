@@ -2,22 +2,20 @@ from models.House import House
  
 class Mansion(House):
     
-    def __init__(self, area, price, rating, adress, numberOfRooms, city):
+    def __init__(self, area, price, rating, adress, number_of_rooms, city):
         self.area = area
         self.price = price
         self.rating = rating
         self.adress = adress
-        self.numberOfRooms = numberOfRooms
+        self.number_of_rooms = number_of_rooms
         self.city = city
         
-    @property
-    def get_waterSupply(self):
-        return self.waterSupply        
+    def get_water_supply(self):
+        return self.water_supply        
         
-    def set_waterSupply(self, x):
-        self.waterSupply = x
+    def set_water_supply(self, x):
+        self.water_supply = x
     
-    @property
     def get_floors(self):
         return self.floors       
         

@@ -2,15 +2,14 @@ from models.House import House
  
 class Apartment(House):
     
-    def __init__(self, area, price, rating, adress, numberOfRooms, city):
+    def __init__(self, area, price, rating, adress, number_of_rooms, city):
         self.area = area
         self.price = price
         self.rating = rating
         self.adress = adress
-        self.numberOfRooms = numberOfRooms
+        self.number_of_rooms = number_of_rooms
         self.city = city
         
-    @property
     def get_flour(self):
         return self.flour        
         
